@@ -1,4 +1,4 @@
-interface InfoProps {
+export interface InfoProps {
     pages: number
     next: number
     prev: number
@@ -10,7 +10,6 @@ export interface EpisodeProps {
     name: string
     air_date: string
     episode: string
-    info: InfoProps
 }
 
 export type EpisodeCardProps = Pick<EpisodeProps, 'id' | 'name'| 'air_date' | "episode">
